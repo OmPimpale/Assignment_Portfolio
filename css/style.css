@@ -1,0 +1,10 @@
+:root {
+    /* fonts */
+    --headFont: "Montserrat", sans-serif;
+    --textFont: "Raleway", sans-serif;
+
+    /* colours */
+    --darkTextColour: rgb(51, 51, 51);
+    --lightTextColour: rgb(251, 248, 241);
+    
+}
