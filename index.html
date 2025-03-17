@@ -19,9 +19,79 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+    <header id="nav">
+        <!-- ==== navbar ==== -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-2" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="navlogo"><img src="./images/background/logo1.png" alt=""
+                        class="img-fluid" id="navimg"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="navbtn">
+                    <i class="fa-solid fa-bars text-light"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-2 mx-md-3 mx-lg-2" aria-current="page"
+                                href="#herosection">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 mx-md-4" href="#about" id="home">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 mx-md-4" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 mx-md-4" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <!-- ==== herosection ==== -->
+        <section class="row" id="herosection">
+            <div class="col">
+                <section class="row justify-content-center justify-content-lg-evenly">
+                    <div class="col-12 col-md-8 col-lg-6 text-center" data-aos="fade-right"></div>
+                    <img src="./images/background/avtar.png" alt="avtar" class="img-fluid" id="heroimg">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 mt-4 my-lg-auto">
+                <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="linear">
+                    <h3 class="herohead1">Hello, Myself</h3>
+                    <h1 class="herohead2">Om Pimpale</h1>
+                    <h3 class="herohead1">And I'm a <span>Full Stack Java Developer</span></h3>
+                    <p class="my-2 pb-3" id="herotext">
+                        Seeking opportunities to apply classroom learning in a real-world setting and contribute to
+                        IT Industry.
+                    </p>
+                </div>
+                <div>
+                    <a href="#contact" class="text-decoration-none herobtn me-2" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-easing="linear">Hire me</a>
+                    <a href="#project" class="text-decoration-none herobtn mx-2" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-easing="linear">Projects</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+    </main>
 
 
     <!-- Bootstrap js file -->
