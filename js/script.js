@@ -79,3 +79,17 @@ window.onload = function () {
         sendMail(); // Call sendMail function on form submit
     });
 }
+
+
+// ==== date nad time
+function displayDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString();
+    document.getElementById("datetime").textContent = dateTimeString;
+}
+
+// Update the date and time every second
+setInterval(displayDateTime, 1000);
+
+// Display immediately on page load
+displayDateTime();

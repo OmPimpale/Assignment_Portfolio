@@ -30,6 +30,9 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- emailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -110,13 +113,15 @@
                         data-aos-duration="1000" data-aos-easing="linear">Hire me</a>
                 </div>
             </div>
+
+            <a href="#herosection" class="text-decoration-none btn" id="upbtn"><i class="fa-solid fa-arrow-up"></i></a>
         </section>
 
         <!-- ==== about ==== -->
         <section class="row" id="about">
             <div class="col">
-                <section class="row justify-content-center mb-5">
-                    <div class="col-12 col-md-8 mb-4 d-lg-none text-center mt-5" data-aos="fade-down"
+                <section class="row justify-content-center my-5">
+                    <div class="col-12 col-md-8 mb-4 d-lg-none text-center" data-aos="fade-down"
                         data-aos-easing="linear" data-aos-duration="800">
                         <img src="./images/background/Om_Photo.jpg" alt="avtra" class="img-fluid myimg">
                     </div>
@@ -475,41 +480,58 @@
                             <div class="d-inline-block learn">ChartJS</div>
                             <div class="d-inline-block learn">Git&Gihub</div>
                         </div>
+                    </div>
                 </section>
             </div>
+        </section>
 
-            <!-- ==== contact ==== -->
-            <section class="row" id="contact">
-                <div class="col my-5">
-                    <h2 id="contacthead" class="text-center mb-4 mb-lg-5"><span>Contact</span> Me</h2>
-                    <section class="row justify-content-center">
-                        <div class="col-lg-10 col-xxl-8">
-                            <form action="" class="text-center" id="contactform">
-                                <div class="d-lg-flex">
-                                    <input type="text" placeholder="Full Name" class="form-control my-lg-2 me-lg-1 py-2"
-                                        id="name" required>
-                                    <input type="email" placeholder="Email Address"
-                                        class="form-control my-2 ms-lg-1 py-2" id="email" required>
-                                </div>
-                                <div class="d-lg-flex">
-                                    <input type="tel" placeholder="Phone Number"
-                                        class="form-control my-lg-2 me-lg-1 py-2" id="mobno" required>
-                                    <input type="text" placeholder="Subject" class="form-control my-2 ms-lg-1 py-2"
-                                        id="subject" required spellcheck="true">
-                                </div>
-                                <textarea placeholder="Your Message" rows="6" class="form-control py-3 mt-lg-3" id="msg"
-                                    required spellcheck="true"></textarea>
-                                <button class="btn m-4" type="submit" id="formbtn" onclick="sendMail()"
-                                    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">Send
-                                    Message</button>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </section>
-
-
+        <!-- ==== contact ==== -->
+        <section class="row" id="contact">
+            <div class="col my-5">
+                <h2 id="contacthead" class="text-center mb-4 mb-lg-5"><span>Contact</span> Me</h2>
+                <section class="row justify-content-center">
+                    <div class="col-lg-10 col-xxl-8">
+                        <form action="" class="text-center" id="contactform">
+                            <div class="d-lg-flex">
+                                <input type="text" placeholder="Full Name" class="form-control my-lg-2 me-lg-1 py-2"
+                                    id="name" required>
+                                <input type="email" placeholder="Email Address" class="form-control my-2 ms-lg-1 py-2"
+                                    id="email" required>
+                            </div>
+                            <div class="d-lg-flex">
+                                <input type="tel" placeholder="Phone Number" class="form-control my-lg-2 me-lg-1 py-2"
+                                    id="mobno" required>
+                                <input type="text" placeholder="Subject" class="form-control my-2 ms-lg-1 py-2"
+                                    id="subject" required spellcheck="true">
+                            </div>
+                            <textarea placeholder="Your Message" rows="6" class="form-control py-3 mt-lg-3" id="msg"
+                                required spellcheck="true"></textarea>
+                            <button class="btn m-4" type="submit" id="formbtn" onclick="sendMail()" data-aos="zoom-in"
+                                data-aos-duration="1000" data-aos-easing="linear">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <!-- ==== footer ==== -->
+        <section class="row" id="footer">
+            <div class="col">
+                <section class="row">
+                    <div class="col text-center">
+                        <p id="foottext">&copy; 2024 All Rights Reserved |<br class="d-md-none">
+                            <a href="https://github.com/OmPimpale/Om_Portfolio.git"
+                                class="text-decoration-none"><span>Om Pimpale (PP-113)</span></a>
+                        <p id="datetime"></p>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </footer>
 
 
     <!-- Bootstrap js file -->
@@ -519,6 +541,12 @@
 
     <!-- JavaScript file -->
     <script src="./js/script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
