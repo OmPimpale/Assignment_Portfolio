@@ -24,6 +24,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "EiA3EweT9XXASgaHW",
+            });
+        })();
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,16 +60,23 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active mx-2 mx-md-3 mx-lg-2" aria-current="page"
-                                href="#herosection">Home</a>
+                                href="#herosection"><span class="me-1">Home</span><i class="fa-solid fa-house"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2 mx-md-4" href="#about" id="home">About</a>
+                            <a class="nav-link mx-2 mx-md-4" href="#about" id="home"><span class="me-1">About</span><i
+                                    class="fa-solid fa-address-card"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2 mx-md-4" href="#project">Projects</a>
+                            <a class="nav-link mx-2 mx-md-4" href="#project"><span class="me-1">Projects</span><i
+                                    class="fa-solid fa-pen-to-square"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-2 mx-md-4" href="#contact">Contact</a>
+                            <a class="nav-link mx-2 mx-md-4" href="#contact"><span class="me-1">Contact</span><i
+                                    class="fa-solid fa-address-book"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 mx-md-4" href="/resume/Om_Resume.pdf" target="_blank"><span
+                                    class="me-1">Resume</span><i class="fa-solid fa-file"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +93,7 @@
                     <div class="col-12 col-md-8 col-lg-6 text-center" data-aos="fade-right"></div>
                     <img src="./images/background/avtar.png" alt="avtar" class="img-fluid" id="heroimg">
             </div>
-            <div class="col-12 col-md-12 col-lg-6 mt-4 my-lg-auto">
+            <div class="col-12 col-md-12 col-lg-6 p-0 mt-4 my-lg-auto">
                 <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="linear">
                     <h3 class="herohead1">Hello, Myself</h3>
                     <h1 class="herohead2">Om Pimpale</h1>
@@ -79,16 +103,410 @@
                         IT Industry.
                     </p>
                 </div>
-                <div>
-                    <a href="#contact" class="text-decoration-none herobtn me-2" data-aos="zoom-in"
-                        data-aos-duration="1000" data-aos-easing="linear">Hire me</a>
-                    <a href="#project" class="text-decoration-none herobtn mx-2" data-aos="zoom-in"
+                <div class="">
+                    <a href="#project" class="text-decoration-none herobtn me-2" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-easing="linear">Projects</a>
+                    <a href="#contact" class="text-decoration-none herobtn ms-2" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-easing="linear">Hire me</a>
                 </div>
             </div>
         </section>
 
-        
+        <!-- ==== about ==== -->
+        <section class="row" id="about">
+            <div class="col">
+                <section class="row justify-content-center mb-5">
+                    <div class="col-12 col-md-8 mb-4 d-lg-none text-center mt-5" data-aos="fade-down"
+                        data-aos-easing="linear" data-aos-duration="800">
+                        <img src="./images/background/Om_Photo.jpg" alt="avtra" class="img-fluid myimg">
+                    </div>
+                    <div class="col-12 col-md-11 col-lg-6 my-auto">
+                        <h2 id="abouthead1" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
+                            About <span>Me</span></h2>
+                        <h3 id="abouthead2" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">I'm
+                            a <span>Full Stack Java Developer</span></h3>
+                        <p id="abouttext" class="my-3 pb-3" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-easing="linear">
+                            Results-driven full-stack web developer with expertise in building <strong>scalable,
+                                high-performance web applications.</strong>
+                            Proficient in <strong> ReactJS, JavaScript, Bootstrap, Java, HTML and CSS </strong>. Adept
+                            at
+                            <strong>front-end
+                                optimization, state management, and component-based architecture </strong>. Passionate
+                            about
+                            developing
+                            intuitive, user-friendly interfaces and implementing <strong> efficient data handling
+                                techniques </strong> to
+                            enhance system
+                            performance. Strong problem-solving skills with experience in <strong> agile methodologies
+                                and
+                                collaborative
+                                development</strong>.
+                        </p>
+                        <a href="https://github.com/OmPimpale" class="text-decoration-none" target="_blank"
+                            data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"><i
+                                class="fa-brands fa-github abouticon me-2" id="abouticon1"></i></a>
+                        <a href="https://www.linkedin.com/in/om-pimpale-83a524279" class="text-decoration-none"
+                            target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"><i
+                                class="fa-brands fa-linkedin-in abouticon mx-2" id="abouticon2"></i></a>
+                        <a href="mailto:ompimpale2003@gmail.com" class="text-decoration-none" target="_blank"
+                            data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"><i
+                                class="fa-solid fa-at abouticon mx-2" id="abouticon3"></i></a>
+                    </div>
+                    <div class="col d-none d-lg-inline text-center" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="800">
+                        <img src="./images/background/Om_Photo.jpg" alt="avtra" class="img-fluid myimg mt-auto">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- ==== project ==== -->
+        <section class="row" id="project">
+            <div class="col">
+                <h2 id="projecthead" class="text-center mb-4 mb-lg-5"><span>P</span>rojects</h2>
+                <section class="row justify-content-md-center">
+
+                    <!-- first project -->
+                    <div class="col-12 col-md-5 mb-2 m-md-3 mt-md-0" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Apzo---VR---Web-Template/" target="_blank" class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project1">
+                                    <img src="./images/illustrative/1.png" alt="project1"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Apzo---VR---Web-Template/" target="_blank"
+                                    class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Apzo</span> Virtual Reality</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Apzo---VR---Web-Template.git" target="_blank"><i
+                                        class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    This template is optimized for businesses showcasing their VR solutions, promoting
+                                    demos, or offering services in the virtual reality space.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">jQuery</div>
+                                <div class="d-inline-block learn">ResponsiveDesign</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- second project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3 mt-md-0" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Javelin---Home-Fitness-Web-Template/" target="_blank"
+                                class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project2">
+                                    <img src="./images/illustrative/2.png" alt="project2"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Javelin---Home-Fitness-Web-Template/"
+                                    target="_blank" class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Jevelin</span> Home Fitness</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Javelin---Home-Fitness-Web-Template.git"
+                                    target="_blank"><i class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    The Javelin Web Template is a professional and visually engaging website design,
+                                    crafted to meet the needs of modern businesses and individuals in the fitness,
+                                    training, and technology sectors.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">AOS</div>
+                                <div class="d-inline-block learn">ResponsiveDesign</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- third project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Winns_Digital_Agency---Web-Template/" target="_blank"
+                                class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project3">
+                                    <img src="./images/illustrative/3.png" alt="project3"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Winns_Digital_Agency---Web-Template/"
+                                    target="_blank" class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Winns</span> Digital Agency</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Winns_Digital_Agency---Web-Template.git"
+                                    target="_blank"><i class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    The Winns Web Template is perfect for businesses seeking a sleek, modern platform to
+                                    showcase their services, portfolio, or ideas while maintaining a strong and credible
+                                    online presence.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">AOS</div>
+                                <div class="d-inline-block learn">Bootstrap</div>
+                                <div class="d-inline-block learn">jQuery</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                                <div class="d-inline-block learn">BootstrapGridSystem</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- fourth project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Eroox_Gaming_-_eSports-Web_Template/" target="_blank"
+                                class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project4">
+                                    <img src="./images/illustrative/4.png" alt="project4"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Eroox_Gaming_-_eSports-Web_Template/"
+                                    target="_blank" class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Eroox</span> Gaming & eSports</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Eroox_Gaming_-_eSports-Web_Template.git"
+                                    target="_blank"><i class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    A visually stunning and feature-rich website template designed specifically for game
+                                    studios. Featuring a bold, modern design with a focus on showcasing your games,
+                                    team, and community.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">AOS</div>
+                                <div class="d-inline-block learn">Bootstrap</div>
+                                <div class="d-inline-block learn">BootstrapGridSystem</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- fifth project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Neura---Web_Template/index.html" target="_blank"
+                                class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project5">
+                                    <img src="./images/illustrative/5.png" alt="project5"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Neura---Web_Template/index.html" target="_blank"
+                                    class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Neura</span> Artificial Inteligence</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Neura---Web_Template.git" target="_blank"><i
+                                        class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    A visually stunning and feature-rich website template designed specifically for AI
+                                    and technology-focused businesses. Featuring a clean, minimalist design with a focus
+                                    on showcasing your AI solutions, team, and expertise.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">Bootstrap</div>
+                                <div class="d-inline-block learn">BootstrapGridSystem</div>
+                                <div class="d-inline-block learn">jQuery</div>
+                                <div class="d-inline-block learn">MultiPageTemplate</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- sixeth project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://om-pimpale-props.netlify.app/" target="_blank" class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project6">
+                                    <img src="./images/illustrative/6.png" alt="project6"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://om-pimpale-props.netlify.app/" target="_blank"
+                                    class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Sierra</span> Nature</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Sierra_Natural_Parks_Props.git" target="_blank"><i
+                                        class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    Sierra Natural Park offers a dynamic and engaging experience. Its clean and
+                                    minimalist design, coupled with interactive elements, invites users to explore the
+                                    beauty of the natural world.
+                                </p>
+                                <div class="d-inline-block learn">React.js</div>
+                                <div class="d-inline-block learn">props</div>
+                                <div class="d-inline-block learn">HTML&CSS</div>
+                                <div class="d-inline-block learn">Bootstrap</div>
+                                <div class="d-inline-block learn">ResponsiveDesign</div>
+                                <div class="d-inline-block learn">JavaScript</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- seventh project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://om-pimpale-router.netlify.app/" target="_blank" class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project7">
+                                    <img src="./images/illustrative/7.png" alt="project7"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://om-pimpale-router.netlify.app/" target="_blank"
+                                    class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Hideaway</span> Resort</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Hideaway_Router_Template.git" target="_blank"><i
+                                        class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    Hideaway Resort offers a seamless and engaging journey through the virtual world of
+                                    your resort. Its clean and minimalist design, coupled with smooth transitions
+                                    between pages, invites users to explore the beauty of your location and plan their
+                                    dream vacation.
+                                </p>
+                                <div class="d-inline-block learn">React.js</div>
+                                <div class="d-inline-block learn">ReactRouter</div>
+                                <div class="d-inline-block learn">HTML&CSS</div>
+                                <div class="d-inline-block learn">Bootstrap</div>
+                                <div class="d-inline-block learn">ResponsiveDesign</div>
+                                <div class="d-inline-block learn">JavaScript</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- eighth project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <section class="row p-3 projectcard rounded-3 h-100">
+                            <a href="https://ompimpale.github.io/Crose_Chruch_Site/" target="_blank" class="p-0">
+                                <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project8">
+                                    <img src="./images/illustrative/8.png" alt="project8"
+                                        class="img-fluid projectimg rounded-3">
+                                </div>
+                            </a>
+                            <div class="col-12 my-3 d-flex justify-content-between">
+                                <a href="https://ompimpale.github.io/Crose_Chruch_Site/" target="_blank"
+                                    class="text-decoration-none">
+                                    <h3 class="projectname mb-0"><span>Crose</span> Church</h3>
+                                </a>
+                                <a href="https://github.com/OmPimpale/Crose_Chruch_Site.git" target="_blank"><i
+                                        class="fa-brands fa-github gitlogo mt-1"></i></a>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <p class="projectdiscribtion">
+                                    This template is crafted for churches, religious organizations, and spiritual
+                                    communities to establish their online presence with elegance and simplicity.
+                                </p>
+                                <div class="d-inline-block learn">HTML</div>
+                                <div class="d-inline-block learn">CSS</div>
+                                <div class="d-inline-block learn">ResponsiveDesign</div>
+                                <div class="d-inline-block learn">JavaScript</div>
+                                <div class="d-inline-block learn">Git&Gihub</div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- ninth project -->
+                    <div class="col-12 col-md-5 my-2 m-md-3" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="linear"">
+                        <section class=" row p-3 projectcard rounded-3 h-100">
+                        <a href="https://ompimpale-dashboard.netlify.app/" target="_blank" class="p-0">
+                            <div class="col-12 p-3 py-md-4 p-lg-4 rounded-3" id="project9">
+                                <img src="./images/illustrative/9.png" alt="project9"
+                                    class="img-fluid projectimg rounded-3">
+                            </div>
+                        </a>
+                        <div class="col-12 my-3 d-flex justify-content-between">
+                            <a href="https://ompimpale-dashboard.netlify.app/" target="_blank"
+                                class="text-decoration-none">
+                                <h3 class="projectname mb-0">User <span>Dashboard</span></h3>
+                            </a>
+                            <a href="https://github.com/OmPimpale/React_Dashboard.git" target="_blank"><i
+                                    class="fa-brands fa-github gitlogo mt-1"></i></a>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <p class="projectdiscribtion">
+                                This template is designed to provide a clean and responsive UI for displaying data
+                                visualizations in an interactive and user-friendly manner.
+                            </p>
+                            <div class="d-inline-block learn">HTML</div>
+                            <div class="d-inline-block learn">CSS</div>
+                            <div class="d-inline-block learn">ResponsiveDesign</div>
+                            <div class="d-inline-block learn">JavaScript</div>
+                            <div class="d-inline-block learn">React.js</div>
+                            <div class="d-inline-block learn">EasyPieChart</div>
+                            <div class="d-inline-block learn">ChartJS</div>
+                            <div class="d-inline-block learn">Git&Gihub</div>
+                        </div>
+                </section>
+            </div>
+
+            <!-- ==== contact ==== -->
+            <section class="row" id="contact">
+                <div class="col my-5">
+                    <h2 id="contacthead" class="text-center mb-4 mb-lg-5"><span>Contact</span> Me</h2>
+                    <section class="row justify-content-center">
+                        <div class="col-lg-10 col-xxl-8">
+                            <form action="" class="text-center" id="contactform">
+                                <div class="d-lg-flex">
+                                    <input type="text" placeholder="Full Name" class="form-control my-lg-2 me-lg-1 py-2"
+                                        id="name" required>
+                                    <input type="email" placeholder="Email Address"
+                                        class="form-control my-2 ms-lg-1 py-2" id="email" required>
+                                </div>
+                                <div class="d-lg-flex">
+                                    <input type="tel" placeholder="Phone Number"
+                                        class="form-control my-lg-2 me-lg-1 py-2" id="mobno" required>
+                                    <input type="text" placeholder="Subject" class="form-control my-2 ms-lg-1 py-2"
+                                        id="subject" required spellcheck="true">
+                                </div>
+                                <textarea placeholder="Your Message" rows="6" class="form-control py-3 mt-lg-3" id="msg"
+                                    required spellcheck="true"></textarea>
+                                <button class="btn m-4" type="submit" id="formbtn" onclick="sendMail()"
+                                    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </section>
 
 
     </main>

@@ -6,7 +6,8 @@
     /* colours */
     --themeColor: #B9B28A;
     --darkTextColour: #504B38;
-    --lightTextColour: #F8F3D9;
+    --lightTextColour: #ffffff;
+    --lightTheme: #f1efe7;
 }
 
 /* main {
@@ -141,5 +142,210 @@ main {
 }
 
 .herobtn:hover {
+    box-shadow: 0px 0px 25px var(--themeColor);
+}
+
+/* ==== about ==== */
+#about {
+    background-color: var(--lightTheme);
+}
+
+#abouthead1 {
+    font: 700 48px var(--headFont);
+    color: var(--darkTextColour);
+}
+
+#abouthead1 span {
+    color: var(--themeColor);
+}
+
+#abouthead2 {
+    font: 700 24px var(--headFont);
+    color: var(--darkTextColour);
+}
+
+#abouthead2 span {
+    color: var(--themeColor);
+}
+
+#abouttext {
+    font: 500 15px var(--textFont);
+    line-height: 20px;
+}
+
+.abouticon {
+    color: var(--themeColor);
+    font-size: 22px;
+    border: 2px solid var(--themeColor);
+    border-radius: 50%;
+    transition: all .4s ease !important;
+}
+
+#abouticon1 {
+    padding: 8.4px 8.75px;
+}
+
+#abouticon2 {
+    padding: 8.4px 9.78px;
+}
+
+#abouticon3 {
+    padding: 8.4px 8.4px;
+}
+
+.abouticon:hover {
+    color: var(--darkTextColour);
+    background-color: var(--themeColor);
+    transform: scale(1.175) translateY(-10px);
+    box-shadow: 0 0 20px var(--darkTextColour);
+}
+
+.myimg {
+    width: 20% !important;
+}
+
+/* ==== project ==== */
+#project {
+    /* padding: 120px 0px !important; */
+    margin: 120px 0px;
+}
+
+#projecthead {
+    font: 700 48px var(--headFont);
+    color: var(--darkTextColour);
+}
+
+#projecthead span {
+    color: var(--themeColor);
+}
+
+.projectcard {
+    background-color: var(--lightTheme);
+    transition: all .4s ease-in-out !important;
+    border: 3.5px solid var(--themeColor);
+    transform: translateY(10px);
+}
+
+.projectcard:hover {
+    transform: translateY(0px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+#project1,
+#project7 {
+    background-image: url('../images/illustrative/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project2,
+#project8 {
+    background-image: url('../images/illustrative/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project3,
+#project9 {
+    background-image: url('../images/illustrative/bg3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project4,
+#project10 {
+    background-image: url('../images/illustrative/bg4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project5,
+#project11 {
+    background-image: url('../images/illustrative/bg5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project6 {
+    background-image: url('../images/illustrative/bg6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectname {
+    font: 700 21px var(--headFont);
+    color: var(--darkTextColour);
+}
+
+.projectname span {
+    color: var(--themeColor);
+}
+
+.gitlogo {
+    font-size: 22px;
+    color: var(--darkTextColour);
+}
+
+.projectdiscribtion {
+    font: 500 15px var(--textFont);
+    color: var(--darkTextColour);
+}
+
+.learn {
+    border: 1px solid;
+    padding: 2px 7px;
+    border-radius: 5px !important;
+    margin: 2.5px 0px;
+    font: 500 14px var(--textFont);
+    background-color: #FDFAF6;
+}
+
+/* ==== contact ==== */
+#contact {
+    background-color: var(--lightTheme);
+}
+
+#contacthead {
+    font: 700 48px var(--headFont);
+    color: var(--darkTextColour);
+}
+
+#contacthead span {
+    color: var(--themeColor);
+}
+
+#formbtn {
+    background-color: var(--themeColor);
+    font: 600 14px var(--headFont);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 100px;
+    transition: all .4s ease !important;
+}
+
+input,
+textarea {
+    border: 2px solid var(--themeColor) !important;
+}
+
+textarea {
+    background-image: url('../images/illustrative/rb_1681.png') !important;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font: 500 13px var(--textFont);
+}
+
+#formbtn:hover {
     box-shadow: 0px 0px 25px var(--themeColor);
 }
